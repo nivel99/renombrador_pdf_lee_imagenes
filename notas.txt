@@ -1,4 +1,5 @@
 instale https://github.com/UB-Mannheim/tesseract/wiki
-y poppler en el disco c y lo agregue a las variables de entorno https://github.com/oschwartz10612/poppler-windows/releases/
+y poppler en el disco c y lo agregue a las variables de entorno en el PATH https://github.com/oschwartz10612/poppler-windows/releases/
 
 cuando falla pip install usare pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org pytesseract
+para crear un instalador es con pyinstaller --onefile mi_script.py
