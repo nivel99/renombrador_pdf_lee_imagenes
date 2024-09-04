@@ -14,7 +14,7 @@ def extract_text_from_pdf(pdf_path):
     return text
 
 def find_cedula(text):
-    match = re.search(r'cedula No[.:\s]*(\d+)', text, re.IGNORECASE)
+    match = re.search(r'No[.:\s]*(\d+)', text, re.IGNORECASE)
     if match:
         return match.group(1)
     return None
@@ -31,7 +31,7 @@ def rename_pdf(folder_path):
                 os.rename(pdf_path, new_path)
                 print(f"Renombrado: {filename} -> {new_filename}")
             else:
-                print(f"No se encontró cédula en: {filename}")
+                print(f"No se encontró No en: {filename}")
 
 # Usa la función
 folder_path = 'pdfs'
